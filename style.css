@@ -22,15 +22,17 @@ header {
     position: relative;
     overflow: hidden;
     padding-bottom: 4rem;
+    overflow-x: hidden; /* prevent horizontal scroll and clipping */
 }
 .waves {
     position: absolute;
     top: -20px;
-    left: 0;
-    width: 100%;
+    left: -10%; /* center the svg horizontally for wider effect */
+    width: 120%; /* wider so edges never show when animating */
     height: 320px;
     animation: waveMove 8s ease-in-out infinite;
     z-index: 0;
+    will-change: transform;
 }
 @keyframes waveMove {
     0%, 100% { transform: translateX(0); }
@@ -259,8 +261,30 @@ footer a:hover {
     fill-opacity: 0.6;
 }
 
-/* Responsive */
+
+.coming-soon {
+    font-size: 0.95rem;
+    color: #0a2e33;
+    font-weight: 600;
+    align-self: center;
+    margin-left: 12px;
+    font-family: 'DM Sans', sans-serif;
+}
+.download-buttons, .download-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 0.8rem;
+}
+
+
+/* Larger waves on small devices */
 @media (max-width: 720px) {
+    .waves {
+        height: 380px; /* increased height for bigger waves */
+        top: -40px; /* pull waves a bit higher so they don't get cut */
+    }
     .features {
         flex-direction: column;
         align-items: center;
