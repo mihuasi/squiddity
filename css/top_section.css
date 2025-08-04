@@ -17,6 +17,10 @@ a {
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Header + Wave animation */
 header {
     position: relative;
