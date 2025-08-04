@@ -1,0 +1,27 @@
+/* Larger waves on small devices and related tweaks */
+@media (max-width: 720px) {
+    .waves {
+        height: 380px; /* increased height for bigger waves */
+        top: -40px; /* pull waves a bit higher so they don't get cut */
+    }
+    .features {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6rem;
+    }
+    .hero-content h1 {
+        font-size: 2.6rem;
+    }
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+    .device-mockup {
+        max-width: 260px;
+        margin-top: 1.8rem;
+    }
+    .squid-mascot {
+        width: 70px;
+        top: 90px;
+        right: 12%;
+    }
+}

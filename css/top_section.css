@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Quicksand:wght@700&display=swap');
+
+/* Reset & base */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0; padding: 0;
+    background: linear-gradient(180deg, #d6f0ef 0%, #b9e8e5 100%);
+    color: #0a2e33;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Header + Wave animation */
+header {
+    position: relative;
+    overflow: hidden;
+    /*padding-bottom: 4rem;*/
+    overflow-x: hidden; /* prevent horizontal scroll and clipping */
+}
+.waves {
+    position: absolute;
+    top: -20px;
+    left: -10%; /* center the svg horizontally for wider effect */
+    width: 120%; /* wider so edges never show when animating */
+    height: 320px;
+    animation: waveMove 8s ease-in-out infinite;
+    z-index: 0;
+    will-change: transform;
+}
+@keyframes waveMove {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-20px); }
+}
+.squid-mascot {
+    position: absolute;
+    right: 15%;
+    top: 60px;
+    width: 100px;
+    filter: drop-shadow(0 4px 4px rgba(0,0,0,0.2));
+    z-index: 2;
+    pointer-events: none;
+}
+.hero-content {
+    position: relative;
+    max-width: 600px;
+    margin: 80px auto 0;
+    padding: 0 1.5rem;
+    text-align: center;
+    z-index: 3;
+    color: #0a2e33; /* Dark color for better readability */
+    text-shadow: 0 0 4px rgba(255,255,255,0.7); /* subtle white glow */
+}
+.hero-content h1 {
+    font-family: 'Quicksand', cursive;
+    font-size: 3.8rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    text-shadow: 0 0 4px rgba(255,255,255,0.7);
+}
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: #1b3e45;
+    text-shadow: 0 0 4px rgba(255,255,255,0.7);
+}
+.cta-main {
+    display: inline-block;
+    background: #12b7b6;
+    color: white;
+    font-weight: 700;
+    font-size: 1.15rem;
+    padding: 0.9rem 2.8rem;
+    border-radius: 32px;
+    box-shadow: 0 6px 18px rgba(18, 183, 182, 0.6);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.cta-main:hover, .cta-main:focus {
+    background: #0e9392;
+    transform: scale(1.08);
+    outline: none;
+}
+.device-mockup {
+    position: relative;
+    max-width: 320px;
+    margin: 2.3rem auto 0;
+    z-index: 3;
+    box-shadow: 0 20px 45px rgba(18, 183, 182, 0.4);
+    border-radius: 40px;
+}
+.device-mockup img {
+    display: block;
+    width: 100%;
+    border-radius: 40px;
+}

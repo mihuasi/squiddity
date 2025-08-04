@@ -1,0 +1,175 @@
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1.5rem 3.5rem;
+}
+
+/* Feature cards */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.4rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.feature-card {
+    background: white;
+    border-radius: 28px;
+    box-shadow: 0 8px 20px rgba(18, 183, 182, 0.15);
+    flex: 1 1 260px;
+    padding: 1.9rem 1.8rem 2rem 1.8rem;
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: default;
+}
+.feature-card:hover {
+    box-shadow: 0 14px 34px rgba(18, 183, 182, 0.3);
+    transform: translateY(-8px);
+}
+.feature-icon {
+    font-size: 2.6rem;
+    margin-bottom: 1.1rem;
+}
+.feature-title {
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+    font-size: 1.3rem;
+    color: #155757;
+}
+.feature-card p {
+    font-size: 1.05rem;
+    line-height: 1.4;
+    color: #206765;
+}
+
+/* Testimonials */
+.testimonials {
+    background: white;
+    border-radius: 32px;
+    box-shadow: 0 14px 40px rgba(18, 183, 182, 0.2);
+    max-width: 620px;
+    margin: 0 auto 3rem;
+    padding: 2.6rem 2rem 3rem;
+    text-align: center;
+}
+.testimonial-stars {
+    font-size: 1.5rem;
+    color: #f0b429;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1em;
+}
+.testimonial-text {
+    font-style: italic;
+    font-size: 1.18rem;
+    color: #124241;
+    margin-bottom: 1rem;
+}
+.testimonial-user {
+    font-weight: 700;
+    color: #12908d;
+}
+
+/* Download CTA */
+.download-cta {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.btn-store {
+    background: white;
+    color: #14a2a6;
+    padding: 0.65rem 1.2rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    box-shadow: 0 6px 22px rgba(20, 162, 166, 0.15);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+.btn-store:hover {
+    background: #14a2a6;
+    color: white;
+    box-shadow: 0 8px 26px rgba(20, 162, 166, 0.4);
+}
+.btn-store img {
+    height: 26px;
+}
+
+/* Examples section */
+.examples {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.examples h3 {
+    font-size: 1.7rem;
+    margin-bottom: 0.7rem;
+    color: #124241;
+}
+.examples ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #126e6c;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.examples li {
+    margin-bottom: 9px;
+}
+
+/* Disclaimer */
+.disclaimer {
+    background: #d5f0ef;
+    color: #147a79;
+    max-width: 620px;
+    margin: 0 auto 3rem;
+    padding: 1rem 1.5rem;
+    border-radius: 24px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background: #14a2a6;
+    color: white;
+    text-align: center;
+    padding: 1.2rem 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 32px 32px 0 0;
+    margin-top: 2rem;
+}
+footer a {
+    color: #c0efee;
+    margin: 0 0.7rem;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Softened wave effect for higher readability */
+.waves path {
+    fill-opacity: 0.6;
+}
+
+.coming-soon {
+    font-size: 0.95rem;
+    color: #0a2e33;
+    font-weight: 600;
+    align-self: center;
+    margin-left: 12px;
+    font-family: 'DM Sans', sans-serif;
+}
+.download-buttons, .download-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 0.8rem;
+}
