@@ -25,7 +25,7 @@ html {
 header {
     position: relative;
     overflow: hidden;
-    /*padding-bottom: 4rem;*/
+    padding-bottom: 2rem;
     overflow-x: hidden; /* prevent horizontal scroll and clipping */
 }
 .waves {
