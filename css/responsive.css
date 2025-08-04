@@ -25,3 +25,45 @@
         right: 12%;
     }
 }
+
+@media (max-width: 460px) {
+    .waves {
+        width: 150% !important;      /* Make waves much wider for small screens */
+        left: -25% !important;       /* Center by shifting further left */
+        height: 420px !important;    /* Increase wave height for more coverage */
+        top: -60px !important;       /* Raise waves to avoid bottom cut-off */
+    }
+    .nav.prev {
+        left: -35px !important;      /* Bring Prev arrow further out to avoid image overlap */
+    }
+    .nav.next {
+        right: -35px !important;     /* Bring Next arrow further out to avoid image overlap */
+    }
+    .carousel-container {
+        max-width: 320px !important; /* Reduce carousel size for narrow devices */
+    }
+}
+
+@media (max-width: 420px) {
+    .waves {
+        width: 170% !important;   /* Even wider waves */
+        left: -35% !important;    /* Shift further to the left */
+        height: 460px !important; /* Even taller */
+        top: -70px !important;    /* Pull up to avoid cutoff */
+    }
+    .squid-mascot {
+        right: 7% !important;     /* Mascot further right for focus */
+        width: 75px !important;   /* Slightly smaller mascot image */
+    }
+    .nav.prev {
+        left: -45px !important;   /* Move arrows even further out */
+    }
+    .nav.next {
+        right: -45px !important;
+    }
+    .carousel-container {
+        max-width: 280px !important; /* Smaller carousel for SE/extra narrow screens */
+    }
+}
+
+
