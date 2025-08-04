@@ -1,0 +1,209 @@
+/* Base */
+* { box-sizing: border-box; }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; padding: 0;
+    background: #effbfd;
+    color: #20313b;
+    line-height: 1.6;
+}
+a { text-decoration: none; color: inherit; }
+
+/* Wave Header */
+header {
+    padding: 0;
+    margin: 0;
+    background: none;
+}
+.wave-wrap {
+    position: relative;
+    background: linear-gradient(180deg, #41b6e6 80%, #b0fff7 100%);
+    overflow: hidden;
+    border-radius: 0 0 40px 40px;
+}
+.wave-svg {
+    display: block;
+    width: 100%;
+    height: 110px;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+.wave-content {
+    position: relative;
+    z-index: 2;
+    padding: 4.5rem 1.5rem 1rem 1.5rem;
+    text-align: center;
+    color: #fff;
+}
+.squid-emoji {
+    font-size: 2.1rem;
+    margin-right: 0.3rem;
+}
+.wave-content h1 {
+    margin: 0 0 0.7rem 0;
+    font-size: 3rem;
+    letter-spacing: 0.03em;
+    font-weight: 800;
+}
+.wave-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2.2rem;
+}
+
+/* Download Buttons */
+.download-buttons, .download-cta {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+}
+.btn-store {
+    background: #fff;
+    color: #41b6e6;
+    padding: 0.7rem 1.3rem;
+    border-radius: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 6px 24px rgba(65, 182, 230, 0.11);
+    font-size: 1rem;
+    border: none;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+.btn-store:hover {
+    background: #b0fff7;
+    color: #20313b;
+    box-shadow: 0 8px 26px rgba(41,173,202,0.15);
+}
+.btn-store img { height: 24px; }
+
+/* Hero image mockup */
+.hero-image {
+    margin: 2rem 0 2rem;
+    text-align: center;
+}
+.hero-image img {
+    width: 260px;
+    max-width: 92vw;
+    border-radius: 30px;
+    box-shadow: 0 12px 42px #41b6e642;
+    border: 3px solid #4acea2;
+}
+
+/* Features */
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.features {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+.feature-card {
+    background: white;
+    flex: 1 1 240px;
+    max-width: 320px;
+    border-radius: 22px;
+    padding: 1.7rem 1.2rem 1.25rem;
+    box-shadow: 0 5px 26px #41b6e61a;
+    text-align: center;
+    margin-top: 1rem;
+    transition: box-shadow 0.28s;
+}
+.feature-card:hover {
+    box-shadow: 0 11px 30px #41b6e640;
+}
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.6rem;
+    color: #41b6e6;
+}
+.feature-title {
+    font-weight: 800;
+    margin-bottom: 0.4rem;
+    font-size: 1.22rem;
+}
+.feature-card p { color: #223c57; font-size: 1.03rem; }
+
+/* Testimonials */
+.testimonials {
+    background: #fff;
+    border-radius: 18px;
+    padding: 2.2rem 1.2rem;
+    box-shadow: 0 7px 34px #41b6e620;
+    max-width: 650px;
+    margin: 0 auto 2.7rem;
+    text-align: center;
+}
+.testimonial-stars {
+    color: #f5b50a;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.04em;
+}
+.testimonial-text {
+    font-style: italic;
+    font-size: 1.14rem;
+    color: #3b515a;
+}
+.testimonial-user {
+    margin-top: 0.7rem;
+    font-weight: 600;
+    color: #41b6e6;
+}
+
+.download-cta { margin-bottom: 2.3rem; }
+.examples {
+    text-align: center;
+    margin-bottom: 2.2rem;
+}
+.examples ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.6rem 0 0 0;
+    color: #14687b;
+    font-weight: 500;
+}
+.examples li {
+    margin-bottom: 0.3rem;
+}
+.disclaimer {
+    background: #f6fcfa;
+    border-radius: 12px;
+    padding: 1rem;
+    font-size: 0.98rem;
+    color: #388a9c;
+    margin: 0 auto 2rem auto;
+    max-width: 650px;
+    text-align: center;
+}
+
+footer {
+    background: #41b6e6;
+    color: white;
+    padding: 1rem 1.5rem 0.8rem 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 32px 32px 0 0;
+    margin-top: 2.1rem;
+}
+footer a { color: #e0f5f7; margin: 0 0.7rem; font-weight: 600; }
+footer a:hover { text-decoration: underline; }
+
+/* Responsive */
+@media (max-width: 700px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container { padding: 0 0.25rem; }
+    .wave-content h1 { font-size: 2.1rem; }
+    .wave-content { padding: 3.3rem 0.4rem 0.7rem 0.4rem; }
+}

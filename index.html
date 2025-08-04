@@ -3,245 +3,90 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>YourApp - Simple & Smart</title>
-    <style>
-        /* Reset & base */
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0; padding: 0;
-            background: #f4f6f8;
-            color: #333;
-            line-height: 1.5;
-        }
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        /* Container */
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 1rem 1.5rem;
-        }
-
-        /* Header / Hero */
-        header {
-            background: #4a90e2;
-            color: white;
-            padding: 2.5rem 1.5rem;
-            text-align: center;
-            border-radius: 0 0 24px 24px;
-        }
-        header h1 {
-            margin: 0.2rem 0;
-            font-size: 2.75rem;
-            font-weight: 700;
-        }
-        header p {
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
-        }
-        .download-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-        }
-        .btn-store {
-            background: white;
-            color: #4a90e2;
-            padding: 0.6rem 1.2rem;
-            border-radius: 8px;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            box-shadow: 0 3px 6px rgb(0 0 0 / 0.15);
-            transition: background-color 0.3s ease;
-        }
-        .btn-store:hover {
-            background: #e1e9ff;
-        }
-        .btn-store img {
-            height: 24px;
-        }
-
-        /* Hero image mockup */
-        .hero-image {
-            margin: 2rem 0 3rem;
-            text-align: center;
-        }
-        .hero-image img {
-            width: 260px;
-            max-width: 90vw;
-            border-radius: 24px;
-            box-shadow: 0 8px 20px rgba(74, 144, 226, 0.4);
-        }
-
-        /* Features */
-        .features {
-            display: flex;
-            gap: 2rem;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-bottom: 3rem;
-        }
-        .feature-card {
-            background: white;
-            flex: 1 1 250px;
-            max-width: 300px;
-            border-radius: 16px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
-            text-align: center;
-            transition: box-shadow 0.3s ease;
-        }
-        .feature-card:hover {
-            box-shadow: 0 6px 16px rgb(74 144 226 / 0.2);
-        }
-        .feature-icon {
-            font-size: 2.8rem;
-            margin-bottom: 1rem;
-            color: #4a90e2;
-        }
-        .feature-title {
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            font-size: 1.25rem;
-        }
-        .feature-desc {
-            color: #666;
-        }
-
-        /* Testimonials */
-        .testimonials {
-            background: #fff;
-            border-radius: 16px;
-            padding: 2rem;
-            box-shadow: 0 4px 12px rgb(0 0 0 / 0.07);
-            max-width: 640px;
-            margin: 0 auto 3rem;
-            text-align: center;
-        }
-        .testimonial-stars {
-            color: #f5b50a;
-            font-size: 1.4rem;
-            margin-bottom: 0.8rem;
-        }
-        .testimonial-text {
-            font-style: italic;
-            font-size: 1.1rem;
-            color: #444;
-        }
-        .testimonial-user {
-            margin-top: 0.6rem;
-            font-weight: 600;
-            color: #4a90e2;
-        }
-
-        /* Download CTA repeat */
-        .download-cta {
-            display: flex;
-            justify-content: center;
-            gap: 1.2rem;
-            margin-bottom: 3rem;
-        }
-
-        /* Footer */
-        footer {
-            background: #4a90e2;
-            color: white;
-            padding: 1.2rem 1rem;
-            text-align: center;
-            font-size: 0.9rem;
-        }
-        footer a {
-            color: #cbdffc;
-            margin: 0 0.5rem;
-            font-weight: 600;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Responsive */
-        @media (max-width: 640px) {
-            .features {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
+    <title>Squiddity – Flexible Habit Tracker</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
 <header>
-    <div class="container">
-        <h1>YourApp</h1>
-        <p>Smart, Simple Finance in Your Pocket</p>
-        <div class="download-buttons">
-            <a href="#" aria-label="Download on Google Play" class="btn-store">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play Store" />
-                Android
-            </a>
-            <a href="#" aria-label="Download on App Store" class="btn-store">
-                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Apple App Store" />
-                iOS
-            </a>
+    <div class="wave-wrap">
+        <svg class="wave-svg" viewBox="0 0 1440 240" preserveAspectRatio="none">
+            <path d="M0,160 C300,220 1140,60 1440,160 L1440,240 L0,240 Z" fill="#4acea2"/>
+            <path d="M0,180 C300,240 1140,80 1440,180 L1440,240 L0,240 Z" fill="#41b6e6" opacity="0.82"/>
+        </svg>
+        <div class="wave-content">
+            <h1>
+                <span class="squid-emoji" aria-label="squid">🦑</span> Squiddity
+            </h1>
+            <p>
+                Shape your habits your way — <br />
+                vivid reflection, gentle encouragement, and playful insight.
+            </p>
+            <div class="download-buttons">
+                <a href="#" class="btn-store" aria-label="Download on Google Play">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play Store" />
+                    Android
+                </a>
+            </div>
         </div>
-        <div class="hero-image">
-            <img src="https://via.placeholder.com/260x520/4a90e2/ffffff?text=App+UI+Mockup" alt="Your App screenshot in phone mockup" />
-        </div>
+    </div>
+    <div class="hero-image">
+        <img src="https://via.placeholder.com/260x520/b0fff7/192b3b?text=Squiddity+UI+Mockup" alt="Squiddity app screenshot in phone mockup" />
     </div>
 </header>
 
 <main class="container">
     <section class="features" aria-label="App Features">
-        <article class="feature-card" role="region" aria-labelledby="feature1-title">
-            <div class="feature-icon" aria-hidden="true">💰</div>
-            <h2 id="feature1-title" class="feature-title">Expense Tracking</h2>
-            <p class="feature-desc">Easily add your daily expenses and see where your money goes.</p>
+        <article class="feature-card">
+            <div class="feature-icon">🌈</div>
+            <h2 class="feature-title">Flexible Tracking</h2>
+            <p>Capture your habits in vibrant color grids or with gentle prompts. Choose how you reflect: quick check-ins or thoughtful journaling.</p>
         </article>
-        <article class="feature-card" role="region" aria-labelledby="feature2-title">
-            <div class="feature-icon" aria-hidden="true">📊</div>
-            <h2 id="feature2-title" class="feature-title">Insightful Reports</h2>
-            <p class="feature-desc">Visualize your finances with charts and monthly summaries.</p>
+        <article class="feature-card">
+            <div class="feature-icon">🧭</div>
+            <h2 class="feature-title">Define Your Progress</h2>
+            <p>No streak stress—Squiddity asks: How much are you putting in? How much are you getting out? You decide what progress means to you.</p>
         </article>
-        <article class="feature-card" role="region" aria-labelledby="feature3-title">
-            <div class="feature-icon" aria-hidden="true">🔔</div>
-            <h2 id="feature3-title" class="feature-title">Bill Reminders</h2>
-            <p class="feature-desc">Never miss a payment with customized reminders.</p>
+        <article class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h2 class="feature-title">Private, Low-Pressure</h2>
+            <p>Your activity is just for you. Squiddity is about gentle, positive encouragement—never judgment.</p>
+        </article>
+        <article class="feature-card">
+            <div class="feature-icon">✨</div>
+            <h2 class="feature-title">Celebrate Effort</h2>
+            <p>Every micro-accomplishment counts! Discover patterns, celebrate small steps, and spark new motivation.</p>
         </article>
     </section>
 
-    <section class="testimonials" aria-label="User Testimonials">
-        <div class="testimonial-stars" aria-hidden="true">★★★★★</div>
-        <p class="testimonial-text">"Love how easy this app makes managing my budget!"</p>
-        <p class="testimonial-user">– Jane D.</p>
+    <section class="testimonials">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">“Unlike any other habit app: Squiddity feels like a supportive friend, not a drill sergeant.”</p>
+        <p class="testimonial-user">– Beta Tester</p>
     </section>
 
-    <section class="download-cta" aria-label="Download Call to Action">
-        <a href="#" aria-label="Download on Google Play" class="btn-store">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play Store" />
-            Android
+    <section class="download-cta">
+        <a href="#" class="btn-store" aria-label="Download on Google Play">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play Store" />Android
         </a>
-        <a href="#" aria-label="Download on App Store" class="btn-store">
-            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Apple App Store" />
-            iOS
-        </a>
+    </section>
+
+    <section class="examples">
+        <h3>What can you track with Squiddity?</h3>
+        <ul>
+            <li>Meditation, exercise, planning, journaling, social time</li>
+            <li>Any habit or reflection that matters to you!</li>
+        </ul>
+    </section>
+
+    <section class="disclaimer">
+        <strong>Note:</strong> Squiddity is for personal growth and reflection, not medical advice. Used by learners worldwide, available in multiple languages.
     </section>
 </main>
 
 <footer>
-    <p>
-        &copy; 2025 YourApp &nbsp;|&nbsp;
-        <a href="#" target="_blank" rel="noopener">Privacy</a> &nbsp;|&nbsp;
-        <a href="#" target="_blank" rel="noopener">Contact</a>
-    </p>
+    &copy; 2025 Squiddity &nbsp;|&nbsp;
+    <a href="#" target="_blank" rel="noopener">Privacy</a> &nbsp;|&nbsp;
+    <a href="#" target="_blank" rel="noopener">Contact</a>
 </footer>
-
 </body>
 </html>
