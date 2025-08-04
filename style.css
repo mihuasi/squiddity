@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Quicksand:wght@700&display=swap');
 
 /* Reset & base */
 * {
@@ -7,7 +7,7 @@
 body {
     font-family: 'DM Sans', sans-serif;
     margin: 0; padding: 0;
-    background: linear-gradient(180deg, #e0f7f6 0%, #93e9e3 100%);
+    background: linear-gradient(180deg, #d6f0ef 0%, #b9e8e5 100%);
     color: #0a2e33;
     line-height: 1.5;
     overflow-x: hidden;
@@ -52,15 +52,21 @@ header {
     padding: 0 1.5rem;
     text-align: center;
     z-index: 3;
+    color: #0a2e33; /* Dark color for better readability */
+    text-shadow: 0 0 4px rgba(255,255,255,0.7); /* subtle white glow for readability */
 }
 .hero-content h1 {
+    font-family: 'Quicksand', cursive;
     font-size: 3.8rem;
     font-weight: 700;
     margin-bottom: 0.3rem;
+    text-shadow: 0 0 4px rgba(255,255,255,0.7);
 }
 .hero-content p {
     font-size: 1.3rem;
     margin-bottom: 2rem;
+    color: #1b3e45;
+    text-shadow: 0 0 4px rgba(255,255,255,0.7);
 }
 .cta-main {
     display: inline-block;
@@ -246,6 +252,11 @@ footer a {
 }
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Softened wave effect for higher readability */
+.waves path {
+    fill-opacity: 0.6;
 }
 
 /* Responsive */
