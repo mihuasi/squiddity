@@ -45,7 +45,7 @@ header {
 .squid-mascot {
     position: absolute;
     right: 15%;
-    top: 60px;
+    top: 70px;
     width: 100px;
     filter: drop-shadow(0 4px 4px rgba(0,0,0,0.2));
     z-index: 2;
