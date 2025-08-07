@@ -1,3 +1,18 @@
+body {
+    background-color: white; /* deep turquoise */
+    background-image: none; /* remove or override any gradient if needed */
+}
+
+.main-wrapper {
+    max-width: 1400px; /* or whatever max width suits your design */
+    margin: 0 auto;
+    background: linear-gradient(180deg, #d6f0ef 0%, #b9e8e5 100%); /* main gradient inside limited width */
+    min-height: 100vh; /* ensure full height */
+}
+
+
+
+
 .container {
     max-width: 960px;
     margin: 0 auto;
