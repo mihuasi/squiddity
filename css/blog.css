@@ -1,0 +1,8 @@
+article.blog p, article.blog li {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+article.blog a {
+    color: #0977de;
+}
