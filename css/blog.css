@@ -6,3 +6,12 @@ article.blog p, article.blog li {
 article.blog a {
     color: #0977de;
 }
+
+article.blog section h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+article.blog section:first-of-type h2 {
+    margin-top: 0.5em;
+}
