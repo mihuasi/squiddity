@@ -3,13 +3,13 @@
     const images = [
         '1_habits',
         '2_habits',
-        '3_calendar',
-        '4_calendar',
-        '5_calendar',
+        '3_cal',
+        '4_cal',
+        '5_cal',
         '6_entry',
         '7_entry',
         '8_entry',
-        '9_entry'
+        '9_welcome'
     ];
     let currentIndex = 0;
     const carouselImage = document.querySelector('.carousel-image');
@@ -19,7 +19,7 @@
 
     function updateCarousel(index) {
         currentIndex = index;
-        carouselImage.src = `images/screenshots/${images[index]}.png`;
+        carouselImage.src = `images/screenshots/${images[index]}.jpeg`;
         dots.forEach((dot, i) => {
             if (i === index) {
                 dot.classList.add('active');
