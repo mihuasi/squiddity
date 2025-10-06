@@ -90,6 +90,29 @@ header {
     transform: scale(1.08);
     outline: none;
 }
+.blog-article-link {
+    display: inline-block;
+    color: #12b7b6; /* Same accent color */
+    font-weight: 700;
+    font-size: 1.15rem;
+    padding: 0.9rem 2.8rem;
+    border-radius: 32px;
+    border: 2px solid #12b7b6; /* Border with accent color */
+    background: #d3e3e8;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.blog-article-link:hover,
+.blog-article-link:focus {
+    background: #12b7b6; /* Accent background on hover */
+    color: white;       /* White text on hover */
+    transform: scale(1.05);
+    outline: none;
+}
+
+
+
 .device-mockup {
     position: relative;
     max-width: 320px;
