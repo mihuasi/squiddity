@@ -1,4 +1,3 @@
-// carousel.js
 (() => {
     const images = [
         '1_habits',
@@ -46,4 +45,7 @@
             updateCarousel(i);
         });
     });
+
+    // Call this to load the first JPEG image on page load
+    updateCarousel(0);
 })();
