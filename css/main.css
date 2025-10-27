@@ -113,6 +113,56 @@ body {
     height: 26px;
 }
 
+/* Waitlist section */
+.waitlist-cta {
+    text-align: center;
+    /*margin-bottom: 2.5rem;*/
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.waitlist-cta h3 {
+    font-size: 1.7rem;
+    margin-bottom: 0.7rem;
+    color: #124241;
+}
+
+.waitlist-cta p {
+    font-size: 1.25rem;
+    margin-bottom: 1.4rem;
+    color: #195c5b;              /* Slightly deeper teal for contrast */
+}
+
+.waitlist-cta input[type="email"] {
+    font-size: 1.15rem;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    border: 1.5px solid #19b2b0; /* Accent color border */
+    width: 320px;                /* Optional: makes field wider, adjust as needed */
+    max-width: 100%;
+    margin-bottom: 1.2rem;       /* Extra space below input */
+    box-sizing: border-box;
+}
+
+.waitlist-cta button {
+    font-size: 1.15rem;
+    padding: 0.7rem 2rem;
+    border-radius: 32px;
+    background: #12b7b6;
+    color: white;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.waitlist-cta button:hover,
+.waitlist-cta button:focus {
+    background: #0e9392;
+    transform: scale(1.07);
+    outline: none;
+}
+
+
 /* Examples section */
 .examples {
     text-align: center;
