@@ -1,7 +1,7 @@
 /* Larger waves on small devices and related tweaks */
 @media (max-width: 720px) {
     .waves {
-        height: 380px; /* increased height for bigger waves */
+        height: 440px; /* increased height for bigger waves */
         top: -40px; /* pull waves a bit higher so they don't get cut */
     }
     .features {
@@ -11,6 +11,9 @@
     }
     .hero-content h1 {
         font-size: 2.6rem;
+    }
+    .hero-text-separator {
+        height: 20px;
     }
     .hero-content p {
         font-size: 1.1rem;
@@ -32,6 +35,9 @@
         left: -25% !important;       /* Center by shifting further left */
         height: 420px !important;    /* Increase wave height for more coverage */
         top: -60px !important;       /* Raise waves to avoid bottom cut-off */
+    }
+    .hero-text-separator {
+        height: 0px;
     }
     .nav.prev {
         left: -35px !important;      /* Bring Prev arrow further out to avoid image overlap */
