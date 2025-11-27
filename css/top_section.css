@@ -106,7 +106,7 @@ a.blog-article-link {
     padding: 0.9rem 2.8rem;
     border-radius: 32px;
     border: 2px solid #12b7b6;
-    background: #efecec;
+    background: #f5f4f4;
     text-decoration: none;
     white-space: nowrap;
     transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
