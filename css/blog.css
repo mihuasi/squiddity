@@ -58,3 +58,31 @@ article.blog section:first-of-type h2 {
     font-weight: 600;
     color: #0a2e33;
 }
+
+
+.blog img,
+.blog-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 18px;
+}
+
+/* Wrapper for spacing and max width */
+.blog-image {
+    margin: 1.4rem auto;
+    max-width: 640px;        /* keeps image nicely sized inside article */
+    text-align: center;
+}
+
+/* Optional soft background + caption styling */
+.blog-image img {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.blog-image figcaption {
+    font-size: 0.9rem;
+    color: #556773;
+    margin-top: 0.4rem;
+}
+
