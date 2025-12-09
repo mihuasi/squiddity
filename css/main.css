@@ -110,7 +110,7 @@ body {
     box-shadow: 0 8px 26px rgba(20, 162, 166, 0.4);
 }
 .btn-store img {
-    height: 26px;
+    height: 100%;
 }
 
 /* Waitlist section */
