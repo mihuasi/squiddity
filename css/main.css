@@ -238,3 +238,21 @@ footer a:hover {
     gap: 0.4rem;
     margin-bottom: 0.8rem;
 }
+.download-cta {
+    scroll-margin-top: 30vh;
+}
+
+
+.waitlist-cta input[type="email"],
+.waitlist-cta textarea,
+.waitlist-cta button {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 0.75rem;
+}
+
+.waitlist-cta textarea {
+    min-height: 80px;
+    resize: vertical;
+}
